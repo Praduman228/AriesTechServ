@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aries TechSrev</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+        
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("./Images/bacground.jpeg");
+        }
+        header {
+            background: transparent;
+            padding: 20px 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #000000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 550;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color:#0694C3
+        }
+        .contact-btn {
+            background: white;
+            color: #ff685b;
+            border: 2px solid #ff685b;
+            padding: 12px 24px;
+            border-radius: 15px;
+            width: 125px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .contact-btn:hover {
+            background: #ff685b;
+            color: white;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 50px 10%;
+            padding-right: 4%;
+        }
+        .hero-content {
+            flex: 1;
+            width: 50%;
+            display: flex;
+            gap: 1px;
+            flex-direction: column;
+        }
+        
+        .hero-image img {
+            animation: slideIn 1.5s ease-in-out;
+        }
+        .hero-content h1 {
+            font-size: 40px;
+            color: #0694C3;
+            padding-left: 1px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            
+        }
+        .hero-content span {
+            background: #0694C3;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            
+        }
+        .hero-content p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 10%;
+            padding-top: 20px;
+            gap: 30px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .feature {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 8px;
+            width: 30%;
+            transition: all 0.3s;
+        }
+        .feature:hover{
+           border: 2px solid #0694C3;
+           
+
+        }
+        .feature h3 {
+            color: black;
+            font-size: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* aboutus */
+    .aboutus {
+    margin-top: -1%;
+   background-color: white;
+    display: flex;
+    gap: 200px;
+    /* animation: fadeIn 1.5s ease-in-out; */
+    
+}
+.abouttext{
+    padding-top: 10%;
+
+  
+}
+.abouttext span{
+background-color: #0694C3;
+color: white;
+padding: 6px;
+}
+.abouttext p{
+    font-size: 18px;
+    color: #0694C3;
+    margin-bottom: 20px;
+    width: 70%;
+    color: #9a9f9e;
+    line-height: 1.9;
+    text-align: justify;
+    padding-top: 4px;
+
+}
+.abouthead{
+    
+    font-size: 30px;
+}
+.aboutimage{
+    
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo"><img src="./Images/logoAries.png" alt="" height="80"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Company</a></li>
+            </ul>
+            <a href="#" class="contact-btn">CONTACT US →</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1><span>Experience Seamless Healthcare</span> <br> <strong>Revenue Management</strong></h1>
+            <p>Get paid faster with our accurate medical billing solutions. We minimize claim denials, streamline reimbursement processes, and enhance your financial performance with expert-driven revenue cycle management.</p>
+            <a href="#" class="contact-btn">CONTACT US →</a>
+        </div>
+        <div class="hero-image">
+            <img src="./Images/HealthVector.png" alt="Healthcare Analytics Illustration" width="550">
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="feature">
+            <img src="./Images/circle sec-.png" alt="Claim Denials" width="60">
+            <h3>Reduce Claim Denials</h3>
+            <hr width="25%" color="#0694C3">
+            <p>Minimize rejections with accurate coding and error-free submissions.</p>
+        </div>
+        <div class="feature">
+            <img src="./Images/circle sec- (1).png" alt="Cash Flow" width="60">
+            <h3>Improve Cash Flow</h3>
+            <hr width="25%" color="#0694C3">
+            <p>Accelerate reimbursements and ensure a steady revenue stream.</p>
+        </div>
+        <div class="feature">
+            <img src="./Images/circle sec- (2).png" alt="Insurance Verification" width="60">
+            <h3>Simplify Insurance Verification</h3>
+            <hr width="25%" color="#0694C3" >
+            <p>Streamline eligibility checks for hassle-free patient processing.</p>
+        </div>
+    </section>
+    <section class="aboutus">
+        <div class="aboutimage">
+            <img src="Images/aboutusimg.png" alt="About Us Image" width="500">
+        </div>
+        <div class="abouttext">
+            <h1><span>Who We Are ?</span> </h1>
+            <h1 class="abouthead">Most Trusted Healthcare <br>
+                IT Partner for Providers</h1>
+                <p>Aries TechServ specializes in medical billing, revenue cycle management, and healthcare IT, offering tailored solutions for clinics and hospitals. Combining industry expertise with advanced technology, we streamline billing, enhance patient engagement, and secure IT systems. Our end-to-end services ensure efficiency, profitability, and long-term success for healthcare providers.</p>
+        </div>
+    </section>
+
+
+    
+</body>
+</html>
