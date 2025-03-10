@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             background-image: url("./Images/bacground.jpeg");
+            
         }
         header {
             background: transparent;
@@ -21,6 +22,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
         .logo {
             font-size: 22px;
@@ -171,20 +173,396 @@ padding: 6px;
     
     font-size: 30px;
 }
-.aboutimage{
+.services{
+
+   background-color: white;
+    padding-top: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.servicetext h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 600;
+}
+.servicetext span{
+    background-color: #0694C3;
+    color: white;
+    padding: 6px;
+}
+.servicesbox{
+    padding-top: 5%;
+    display: flex;
+}
+.serviceitem{
+    width: 30%;
+}
+.servicehead{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.features1{
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 10%;
+            padding-top: 20px;
+            margin-top: 3%;
+            gap: 30px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .features1 h1{
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .feature1{
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .feature1:hover{
+           border: 0.5px solid #0694C3;
+           
+
+        }
+        .feature1 p{
+            font-size: 14px;
+            text-align: center;
+            color: grey;
+            letter-spacing: 0.2px;
+            
+
+        }
+        .footer{
+            background-image: url("./Images/bacground.jpeg");
+            background-color: #bfe2f0;
+            display: flex;
+            justify-content: space-around;
+            color: white;
+        }
+        .footer1{
+            padding: 50px;
+            padding-bottom: 3%;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            width: 30%;
+        }
+        .footer1 h1{
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: 600;
+            color: #131313;
+            
+        }
+        .footer1 p{
+            font-size: 16px;
+            color: grey;
+            font-weight: 300;
+            line-height: 1.5;
+            
+        }
+        .footer2{
+            padding: 10px ;
+            padding-bottom: 3%;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            width: 20%;
+           
+        }
+        .footer2 h2{
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: left;
+            font-weight: 600;
+            color: #131313;
+        }
+        .footer2 li ul {
+            
+            display: flex;
+            gap: 10px;
+        }
+        .footer2 ul{
+            list-style-type:disc;
+            text-align: left;
+            color: #000;
+    
+        }
+
+        .footer2 a{
+            text-decoration: none;
+            color: grey;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+        .footer2 a:hover{
+            text-decoration: underline;
+        }
+        .footer3{
+            
+            padding: 10px;
+            padding-bottom: 3%;
+            display: flex;
+            gap: 2px;
+            flex-direction: column;
+            width: 25%;
+            padding-right: 5%;
+            
+        }
+        .footer3 h2{
+            font-size: 24px;
+            margin-bottom: 2px;
+            text-align: left;
+            font-weight: 600;
+            color: #131313;
+        }
+        .footer3 p{
+            margin: 10px;
+            font-size: 16px;
+            color: grey;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+        .footer3 span{
+            padding-right: 4px;
+            color: black;
+        }
+        .links{
+            display: flex;
+            gap: 20px;
+            padding-top: 3px;
+            justify-items: center;
+            padding-left: 20%;
+        }
+
+
+        /* techology */
+.technology{
+    background-color: white;
+    margin-top: -3%;
     
 }
+.technology span{
+    background-color: #0694C3;
+    color: white;
+    padding: 6px;
+}
+.technology h2{
+    padding-top: 4%;
+    font-size: 35px;
+            color: #0694C3;
+           text-align: center;
+          
+            line-height: 1.5;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
 
+.slide img {
+  width: 200px;
+  height: 90px;
+  animation: scroll 12s linear infinite;
+}
+
+.slide-track {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+}
+
+.slider {
+  margin-top: 70px;
+  background-color: white;
+  padding: 8em 2em;
+}
+
+@keyframes scroll {
+  0% {transform: translateX(0);}
+  100% {transform: translatex(-860%)}
+}
+
+
+
+/* contact us  */
+.contact{
+    width: 100%;
+    background-color: white;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.contain {
+  background-color: white;
+  max-width: 1170px;
+  width: 100%;
+
+}
+
+div.form {
+  background-color: white;
+}
+.contact-wrapper {
+  margin: auto 0;
+}
+.form span{
+    background-color: #0694C3;
+    color: white;
+    padding: 6px;
+}
+.submit-btn {
+  float: left;
+}
+.reset-btn {
+  float: right;
+}
+
+.form-headline:after {
+  content: "";
+  display: block;
+  width: 10%;
+  padding-top: 10px;
+  border-bottom: 3px solid #0694C3;
+}
+
+.highlight-text {
+  color: #0694C3;
+}
+
+.hightlight-contact-info {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.highlight-text-grey {
+  font-weight: 500;
+}
+
+.email-info {
+    margin-top: 20px;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  font-family: 'Roboto', sans-serif;
+}
+
+.required-input {
+  color: black;
+}
+@media (min-width: 600px) {
+  .contain {
+    padding: 0;
+  }
+}
+
+h3,
+ul {
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+.form-input:focus,
+textarea:focus{
+  outline: 1.5px solid #0694C3;
+}
+
+.form-input,
+textarea {
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .wrapper > * {
+    padding: 2em 2em;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts {
+  color: #212d31;
+}
+
+.form {
+  background: white;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+form label {
+  display: block;
+}
+form p {
+  margin: 0;
+}
+
+.full-width {
+  grid-column: 1 / 3;
+}
+
+button,
+.submit-btn,
+.form-input,
+textarea {
+  padding: 1em;
+}
+
+button, .submit-btn {
+  background: transparent;
+  border: 1px solid #0694C3;
+  color: #0694C3;
+  border-radius: 15px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+}
+button:hover, .submit-btn:hover,
+button:focus , .submit-btn:focus{
+  background: #0694C3;
+  outline: 0;
+  color: white;
+}
+.error {
+  color: #ec1c24;
+}
 
 
 
     </style>
 </head>
+
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 <body>
     
     <header>
         <nav>
-            <div class="logo"><img src="./Images/logoAries.png" alt="" height="80"></div>
+            <div class="logo"><img src="./Images/AriesNewlogo-removebg-preview.png" alt="" height="80"></div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
@@ -237,8 +615,234 @@ padding: 6px;
                 <p>Aries TechServ specializes in medical billing, revenue cycle management, and healthcare IT, offering tailored solutions for clinics and hospitals. Combining industry expertise with advanced technology, we streamline billing, enhance patient engagement, and secure IT systems. Our end-to-end services ensure efficiency, profitability, and long-term success for healthcare providers.</p>
         </div>
     </section>
+    <section class="technology">
+        <h2><span>Technology-Driven Effiecency</span></h2>
+        <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/8/443909637/ZD/SB/GC/15872015/advancedmd-software.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="https://www.remedihs.com/wp-content/uploads/2023/08/Group-2095.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="https://ambir.com/wp-content/uploads/2024/02/kareo-atc-1.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="https://microwize.com/wp-content/uploads/2022/10/Medisoft-Billing-Software.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Mj_m9gI6tszEz--8n5LNWojvRcAgUnAxJw&s" alt="">
+              </div>
+              <div class="slide">
+                <img src="https://marketplace.zoho.com/view/extnbaner/5c9f92b2-4fa6-43b2-8b42-8ff5b39aa86b" alt="">
+              </div>
+              <div class="slide">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/NG_Logo_1024x768.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="https://i.pcmag.com/imagery/reviews/05ma9S9AojTwc3ENvhck2iE-7.fit_scale.size_760x427.v1569474154.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="https://cdn-east2.baincapital.com/News/Athena%20healthsm%20final%20_0.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="https://mma.prnewswire.com/media/1749045/Cerner_logo_Logo.jpg?p=facebook" alt="">
+              </div>
+              <div class="slide">
+                <img src="https://mms.businesswire.com/media/20210324005618/en/867180/5/Epic-logo-XL.jpg" alt="">
+              </div>
+              </div>
+            
+
+            </div>
+          </div>
+    </section>
+
+    <section class="services">
+        <div class="servicetext">
+            <h1><span>What We Do ?</span></h1>
+            <h1 style="font-size: 30px;">Our Expret Solutions</h1>
+        </div>
+        <div class="features1">
+            <div class="feature1">
+                <img src="./Images/Services/medical-expense (1).png" alt="Service 1" width="100" height="100">
+                <h3>Medical Billing</h3>
+                <hr width="25%" color="#0694C3">
+                <p>We help healthcare providers streamline their billing processes, reduce claim denials, and improve revenue management.</p>
+            </div>
+            <div class="feature1">
+                <img src="./Images/Services/data-analysis.png" alt="Service 2" width="100" height="100">
+                <h3>Data Management & Analytics</h3>
+                <hr width="25%" color="#0694C3">
+                <p>We help healthcare providers optimize their revenue cycle, reduce administrative costs, and increase profitability.</p>
+            </div>
+            <div class="feature1">
+                <img src="./Images/Services/business-continuity (1).png" alt="Service 1" width="100" height="100">
+                <h3>Revenue Cycle Management</h3>
+                <hr width="25%" color="#0694C3">
+                <p>We help healthcare providers streamline their billing processes, reduce claim denials, and improve revenue management.</p>
+            </div>
+            </div>
+            <div class="features1">
+                <div class="feature1">
+                    <img src="./Images/Services/software (1).png" alt="Service 2"width="100" height="100">
+                    <h3>Software Development</h3>
+                    <hr width="25%" color="#0694C3">
+                    <p>We help healthcare providers optimize their revenue cycle, reduce administrative costs, and increase profitability.</p>
+                </div>
+                <div class="feature1">
+                    <img src="./Images/Services/support (1).png" alt="Service 1" width="100" height="100">
+                    <h3>IT Consultant</h3>
+                    <hr width="25%" color="#0694C3">
+                    <p>We help healthcare providers streamline their billing processes, reduce claim denials, and improve revenue management.</p>
+                </div>
+                <div class="feature1">
+                    <img src="./Images/Services/web-development (1).png" alt="Service 1" width="100" height="100">
+                    <h3>Web Development</h3>
+                    <hr width="25%" color="#0694C3">
+                    <p>We help healthcare providers streamline their billing processes, reduce claim denials, and improve revenue management.</p>
+                   
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="contact">
+        <div class="contain">
+
+            <div class="wrapper">
+          
+              <div class="form">
+                <h1><span>GET IN TOUCH</span></h1>
+                <h2 class="form-headline">Send us a message</h2>
+                <form id="submit-form" action="">
+                  <p>
+                    <input id="name" class="form-input" type="text" placeholder="Your Name*">
+                    <small class="name-error"></small>
+                  </p>
+                  <p>
+                    <input id="email" class="form-input" type="email" placeholder="Your Email*">
+                    <small class="name-error"></small>
+                  </p>
+                  <p class="full-width">
+                    <input id="company-name" class="form-input" type="text" placeholder="Company Name*" required>
+                    <small></small>
+                  </p>
+                  <p class="full-width">
+                    <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+                    <small></small>
+                  </p>
+                  <p class="full-width">
+                    <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I would like to receive communications by call / email about Company's services.
+                  </p>
+                  <p class="full-width">
+                    <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                    <button class="reset-btn" onclick="reset()">Reset</button>
+                  </p>
+                </form>
+              </div>
+          
+              <div class="contacts contact-wrapper">
+          
+                <ul>
+                  <li>We've driven online revenues of over <span class="highlight-text-grey">$2
+                      billion</span> for our clients. Ready to know
+                    how we can help you?</li>
+                  <span class="hightlight-contact-info">
+                    <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> info@demo.com</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+91 11 1111 2900</span></li>
+                  </span>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </section>
+    <footer class="footer">
+        <div class="footer1">
+            <h1>Aries TechServ</h1>
+            <p>Inovation digital solutions for Healthcare Enhanceing IT Intregation & WebDevelopment </p>
+            <div class="links">
+                <a href="#"><img src="./Images/footer/facebook (1).png" width="30" height="30" alt="Facebook"></a>
+                <a href="#"><img src="./Images/footer/instagram.png" width="30" height="30" alt="Instagram"></a>
+                <a href="#"><img src="./Images/footer/linkedin.png" width="30" height="30" alt="LinkedIn"></a>
+                <a href="#"><img src="./Images/footer/twitter.png" width="30" height="30" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer2">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Company</a></li>
+        </div>
+        <div class="footer3">
+            <h2>Get In Touch</h2>
+            <p>Excited to discuss how we can tailor our solutions to fit your needs</p>
+            <p><span><i class="ri-map-pin-fill"></i></span>123,Street New York</p>
+            <p><span><i class="ri-phone-fill"></i></span>89437539845</p>
+            <p><span><i class="ri-mail-fill"></i></span>Sample@gmail.com</p>
+
+        </div>
+    </footer>
 
 
     
 </body>
+
+<script>
+    const nameEl = document.querySelector("#name");
+const emailEl = document.querySelector("#email");
+const companyNameEl = document.querySelector("#company-name");
+const messageEl = document.querySelector("#message");
+
+const form = document.querySelector("#submit-form");
+
+function checkValidations() {
+  let letters = /^[a-zA-Z\s]*$/;
+  const name = nameEl.value.trim();
+  const email = emailEl.value.trim();
+  const companyName = companyNameEl.value.trim();
+  const message = messageEl.value.trim();
+  if (name === "") {
+     document.querySelector(".name-error").classList.add("error");
+      document.querySelector(".name-error").innerText =
+        "Please fill out this field!";
+  } else {
+    if (!letters.test(name)) {
+      document.querySelector(".name-error").classList.add("error");
+      document.querySelector(".name-error").innerText =
+        "Please enter only characters!";
+    } else {
+      
+    }
+  }
+  if (email === "") {
+     document.querySelector(".name-error").classList.add("error");
+      document.querySelector(".name-error").innerText =
+        "Please fill out this field!";
+  } else {
+    if (!letters.test(name)) {
+      document.querySelector(".name-error").classList.add("error");
+      document.querySelector(".name-error").innerText =
+        "Please enter only characters!";
+    } else {
+      
+    }
+  }
+}
+
+function reset() {
+  nameEl = "";
+  emailEl = "";
+  companyNameEl = "";
+  messageEl = "";
+  document.querySelector(".name-error").innerText = "";
+}
+
+
+</script>
+
 </html>
