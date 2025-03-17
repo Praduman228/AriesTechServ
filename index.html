@@ -6,6 +6,9 @@
     <title>Aries TechSrev</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        html {
+    scroll-behavior: smooth;
+}
       body {
         
             font-family: 'Poppins', sans-serif;
@@ -589,7 +592,7 @@ padding: 6px;
 .services{
 
    background-color: white;
-    padding-top: 8%;
+    padding-top: 2%;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -1186,7 +1189,7 @@ button:hover, .submit-btn:hover {
     rel="stylesheet"
 />
 <body>
-    <div class="main">
+    <div class="main" id="main">
     <header>
         <nav>
           <div class="hamburger" onclick="toggleMenu()">
@@ -1196,11 +1199,11 @@ button:hover, .submit-btn:hover {
         </div>
             <div class="logo"><img src="./Images/AriesNewlogo-removebg-preview.png" alt="" height="80"></div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#" class="mobile-contact">CONTACT US →</a></li>  
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#aboutus">About us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#technology">Technology-Driven</a></li>
+                <li><a href="#contact" class="mobile-contact">CONTACT US →</a></li>  
             </ul>
 
         </nav>
@@ -1210,7 +1213,7 @@ button:hover, .submit-btn:hover {
         <div class="hero-content">
             <h1><span>Experience Seamless Healthcare</span> <br> <strong>Revenue Management</strong></h1>
             <p>Get paid faster with our accurate medical billing solutions. We minimize claim denials, streamline reimbursement processes, and enhance your financial performance with expert-driven revenue cycle management.</p>
-            <a href="#" class="contact-btn">CONTACT US →</a>
+            <a href="#contact" class="contact-btn">CONTACT US →</a>
         </div>
         <div class="hero-image">
             <img src="./Images/HealthVector.png" alt="Healthcare Analytics Illustration" width="550">
@@ -1238,7 +1241,7 @@ button:hover, .submit-btn:hover {
             <p>Streamline eligibility checks for hassle-free patient processing.</p>
         </div>
     </section>
-    <section class="aboutus">
+    <section class="aboutus" id="aboutus">
         <div class="aboutimage">
             <img src="Images/aboutusimg.png" alt="About Us Image" width="500">
         </div>
@@ -1249,7 +1252,7 @@ button:hover, .submit-btn:hover {
                 <p>Aries TechServ specializes in medical billing, revenue cycle management, and healthcare IT, offering tailored solutions for clinics and hospitals. Combining industry expertise with advanced technology, we streamline billing, enhance patient engagement, and secure IT systems. Our end-to-end services ensure efficiency, profitability, and long-term success for healthcare providers.</p>
         </div>
     </section>
-    <section class="technology">
+    <section class="technology" id="technology">
         <h2><span>Technology-Driven Effiecency</span></h2>
         <div class="slider">
             <div class="slide-track">
@@ -1293,7 +1296,7 @@ button:hover, .submit-btn:hover {
           </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="servicetext">
             <h1><span>What We Do ?</span></h1>
             <h1 style="font-size: 30px;">Our Expret Solutions</h1>
@@ -1343,7 +1346,7 @@ button:hover, .submit-btn:hover {
         </div>
 
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contain">
 
             <div class="wrapper">
@@ -1395,10 +1398,10 @@ button:hover, .submit-btn:hover {
         <div class="footer2">
             <h2>Quick Links</h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Company</a></li>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#technologies">Technology-Driven</a></li>
         </div>
         <div class="footer3">
             <h2>Get In Touch</h2>
@@ -1467,6 +1470,21 @@ function reset() {
 function toggleMenu() {
         document.querySelector("nav ul").classList.toggle("active");
     }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80, // Adjust for navbar height
+                behavior: "smooth",
+            });
+        }
+    });
+});
 </script>
 
 </html>
