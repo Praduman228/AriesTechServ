@@ -11,7 +11,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url("./Images/bacground.jpeg");
+            
             overflow-x: hidden;
             
         }
@@ -24,6 +24,7 @@
             justify-content:start;
             gap: 200px;
             align-items: center;
+   
             
         }
         .logo {
@@ -71,7 +72,9 @@
 
 
 
-
+.main{
+    background-image: url("./Images/bacground.jpeg");
+}
 
         .hero {
             display: flex;
@@ -79,6 +82,7 @@
             gap: 30px;
             padding: 50px 10%;
             padding-right: 4%;
+           
         }
         .hero-content {
             flex: 1;
@@ -799,6 +803,7 @@ padding: 6px;
     .features {
         flex-direction: column;
         align-items: center;
+        margin-top: 0;
     }
     .feature {
         width: 90%;
@@ -827,11 +832,13 @@ padding: 6px;
 }
 
 
-
+.foot{
+background-image: url("Images/bacground.jpeg");
+}
 
         .footer{
-            background-image: url("./Images/bacground.jpeg");
-            background-color: #bfe2f0;
+            
+            
             display: flex;
             justify-content: space-around;
             color: white;
@@ -972,7 +979,7 @@ padding: 6px;
 }
 
 .slider {
-  margin-top: 70px;
+  margin-top: 20px;
   background-color: white;
   padding: 8em 2em;
 }
@@ -1137,7 +1144,39 @@ button:hover, .submit-btn:hover {
 }
 
 
+/* Default: Desktop Layout (Image on Left, Text on Right) */
+.aboutimage img {
+   
+    content: url('Images/aboutusimg.png'); /* Default Image */
+}
 
+
+
+/* For Tablets (width up to 1024px) */
+@media (max-width: 1024px) {
+    .aboutus {
+        flex-direction: column-reverse; /* Text Above, Image Below */
+        text-align: center;
+    }
+
+    .aboutimage img {
+        content: url('Images/aboutimg.png'); /* Tablet Image */
+        width: 400px; /* Adjust size */
+    }
+}
+
+/* For Mobile Devices (width up to 768px) */
+@media (max-width: 768px) {
+    .aboutus {
+        flex-direction: column-reverse; /* Text Above, Image Below */
+        text-align: center;
+    }
+
+    .aboutimage img {
+        content: url('Images/aboutimg.png'); /* Mobile Image */
+        width: 300px; /* Adjust size */
+    }
+}
     </style>
     <link rel="icon" type="image/x-icon"  href="/Images/logoAries.png">
 </head>
@@ -1147,7 +1186,7 @@ button:hover, .submit-btn:hover {
     rel="stylesheet"
 />
 <body>
-    
+    <div class="main">
     <header>
         <nav>
           <div class="hamburger" onclick="toggleMenu()">
@@ -1177,6 +1216,7 @@ button:hover, .submit-btn:hover {
             <img src="./Images/HealthVector.png" alt="Healthcare Analytics Illustration" width="550">
         </div>
     </section>
+</div>
     
     <section class="features">
         <div class="feature">
@@ -1340,6 +1380,7 @@ button:hover, .submit-btn:hover {
             </div>
           </div>
     </section>
+    <div class="foot">
     <footer class="footer">
         <div class="footer1">
             <h1>Aries TechServ</h1>
@@ -1368,7 +1409,7 @@ button:hover, .submit-btn:hover {
 
         </div>
     </footer>
-
+</div>
 
     
 </body>
